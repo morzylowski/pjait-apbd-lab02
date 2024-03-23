@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "LegacyApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LegacyApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LegacyApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LegacyApp/1.0.0": {
+      "type": "project",
+      "path": "../LegacyApp/LegacyApp.csproj",
+      "msbuildProject": "../LegacyApp/LegacyApp.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "LegacyApp >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/morzylowski/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/morzylowski/RiderProjects/zadanie_with_initial_tests/zadanie_solution/LegacyAppConsumer/LegacyAppConsumer.csproj",
+      "projectName": "LegacyAppConsumer",
+      "projectPath": "/Users/morzylowski/RiderProjects/zadanie_with_initial_tests/zadanie_solution/LegacyAppConsumer/LegacyAppConsumer.csproj",
+      "packagesPath": "/Users/morzylowski/.nuget/packages/",
+      "outputPath": "/Users/morzylowski/RiderProjects/zadanie_with_initial_tests/zadanie_solution/LegacyAppConsumer/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/morzylowski/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/morzylowski/RiderProjects/zadanie_with_initial_tests/zadanie_solution/LegacyApp/LegacyApp.csproj": {
+              "projectPath": "/Users/morzylowski/RiderProjects/zadanie_with_initial_tests/zadanie_solution/LegacyApp/LegacyApp.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/Users/morzylowski/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
