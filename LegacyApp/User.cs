@@ -11,5 +11,34 @@ namespace LegacyApp
         public string LastName { get; internal set; }
         public bool HasCreditLimit { get; internal set; }
         public int CreditLimit { get; internal set; }
+
+        public bool IsValidData()
+        {
+            if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName))
+            {
+                return false;
+            }
+
+            if (!EmailAddress.Contains("@") && !EmailAddress.Contains("."))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool IsEligible()
+        {
+            var now = DateTime.Now;
+            int age = now.Year - DateOfBirth.Year;
+            if (now.Month < DateOfBirth.Month || (now.Month == DateOfBirth.Month && now.Day < DateOfBirth.Day)) age--;
+
+            if (age < 21)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
